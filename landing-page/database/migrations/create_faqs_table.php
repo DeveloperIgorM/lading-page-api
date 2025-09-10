@@ -12,6 +12,9 @@ return new class extends Migration
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('pergunta');
+            $table->string('resposta');
+            $table->integer('status');
         });
     }
 

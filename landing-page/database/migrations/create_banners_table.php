@@ -6,16 +6,20 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-   
+
     public function up(): void
     {
         Schema::create('banners', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('image_path')->nullable();
+            $table->string('url')->nullabe();
+            $table->integer('sort_order')->default(0);
+            $table->integer('status');
         });
     }
 
-  
+
     public function down(): void
     {
         Schema::dropIfExists('banners');

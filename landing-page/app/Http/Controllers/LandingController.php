@@ -13,7 +13,7 @@ class LandingController extends Controller
     
     public function index()
     {
-        $banners = Banner::where('status', 1)->orderBy('sort_order')->get();
+        $banners = Banner::where('status', 1)->get();
         $faqs = Faq::where('status', 1)->orderBy('id')->get();
 
         // outros dados (services, about) se existir...

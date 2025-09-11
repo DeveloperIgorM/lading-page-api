@@ -9,9 +9,6 @@ use App\Http\Controllers\ContactController;
 
 Route::get('/', [LandingController::class, 'index'])->name('home');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');

@@ -36,7 +36,7 @@
     <!-- Services example (static placeholders) -->
     <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Nossos serviçus</h2>
+            <h2 class="text-center mb-4">Nossos serviços</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
                     <img src="https://via.placeholder.com/300x200" class="img-fluid mb-3" alt="">

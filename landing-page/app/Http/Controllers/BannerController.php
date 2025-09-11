@@ -20,7 +20,7 @@ class BannerController extends Controller
  
     public function create()
     {
-        return view('admin.banners.create');
+        return view('banners.create');
     }
 
     // Novo banner
